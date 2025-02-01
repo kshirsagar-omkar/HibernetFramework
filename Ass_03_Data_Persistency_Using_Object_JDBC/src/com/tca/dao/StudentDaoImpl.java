@@ -11,11 +11,11 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public String save(Student ob) {
 		
-//		final String URL = "jdbc:postgresql://localhost:5432/hbf?ssl=true&sslmode=require";
-		final String URL = "jdbc:postgresql://dpg-cueugilumphs73alureg-a.singapore-postgres.render.com:5432/mydb";
+		final String URL = "jdbc:postgresql://localhost:5432/hbf?ssl=true&sslmode=require";
+//		final String URL = "jdbc:postgresql://dpg-cueugilumphs73alureg-a.singapore-postgres.render.com:5432/mydb";
 		final String USER = "root";
-//	    final String PASSWORD = "root@123";
-	    final String PASSWORD = "v1ByWJInSbmGRPjVvAHi7LVo0vevig4E";
+	    final String PASSWORD = "root@123";
+//	    final String PASSWORD = "v1ByWJInSbmGRPjVvAHi7LVo0vevig4E";
 	    final String DRIVER = "org.postgresql.Driver";
 	    
 	    
