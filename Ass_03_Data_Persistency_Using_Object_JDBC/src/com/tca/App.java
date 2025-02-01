@@ -9,8 +9,8 @@ public class App {
 	public static void main(String[] args) {
 		
 		Student student = new Student();
-		student.setRno(101);
-		student.setName("Sachin");
+		student.setRno(111);
+		student.setName("render");
 		student.setPer(75.56);
 		
 		
