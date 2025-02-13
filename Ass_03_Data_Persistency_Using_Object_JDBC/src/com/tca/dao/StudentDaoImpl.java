@@ -3,6 +3,10 @@ package com.tca.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.tca.entity.Student;
 
@@ -57,10 +61,68 @@ public class StudentDaoImpl implements StudentDao {
 			catch(Exception e) {
 				e.printStackTrace();
 			}
+		}		
+	}
+
+	
+	
+	//Fetch All Records
+	@Override
+	public List<Student> fetchAll() {
+		
+		final String URL = "jdbc:postgresql://localhost:5432/hbf?sslmode=disable";
+		final String USER = "root";
+	    final String PASSWORD = "root@123";
+	    final String DRIVER = "org.postgresql.Driver";
+	    
+	    
+	    Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		List<Student> students = null;
+		
+		
+		try {
+			
+			Class.forName(DRIVER);
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery("SELECT * FROM student");
+			
+			students = new ArrayList<>();
+			
+			while(rs.next()) {
+				
+				Student ob = new Student();
+				
+				ob.setRno(rs.getInt("rno"));
+				ob.setName(rs.getString("name"));
+				ob.setPer(rs.getDouble("per"));
+				
+				students.add(ob);
+				
+			}	
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				conn.close();
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
 	    
 		
+		if(students.isEmpty()) return null;
 		
+		return students;
 	}
+	
+	
 
 }

@@ -26,5 +26,14 @@ public class Student {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Student [rno=" + rno + ", name=" + name + ", per=" + per + "]";
+	}
+	
+	
+	
+	
+	
 	
 }
