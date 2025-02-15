@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.tca</groupId>
-  <artifactId>Ass_05_Hib_MySQL_App</artifactId>
+  <artifactId>Ass_05_HIB_MYSQL_APP</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Ass_05_Hib_MySQL_App</name>
+  <name>Ass_05_HIB_MYSQL_APP</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -22,29 +22,29 @@
       <scope>test</scope>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
-	<dependency>
-	    <groupId>org.mariadb.jdbc</groupId>
-	    <artifactId>mariadb-java-client</artifactId>
-	    <version>3.4.1</version>
-	</dependency>
-	
-	
-	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<dependency>
 	    <groupId>org.hibernate</groupId>
 	    <artifactId>hibernate-core</artifactId>
-	    <version>3.5.6-Final</version>
+	    <version>3.6.10.Final</version>
 	</dependency>
 
-	
+    
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.33</version>
+	</dependency>
+
+
 	<!-- https://mvnrepository.com/artifact/javassist/javassist -->
 	<dependency>
 	    <groupId>javassist</groupId>
 	    <artifactId>javassist</artifactId>
 	    <version>3.12.1.GA</version>
 	</dependency>
-
 
     
   </dependencies>
