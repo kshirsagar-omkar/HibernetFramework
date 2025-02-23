@@ -5,7 +5,14 @@
 	    <artifactId>mariadb-java-client</artifactId>
 	    <version>3.4.1</version>
 	</dependency>
-	
+	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	<!-- postgresql -->
+  <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.5</version>
+  </dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<!-- Hibernate  -->
@@ -23,3 +30,7 @@
 	    <artifactId>javassist</artifactId>
 	    <version>3.12.1.GA</version>
 	</dependency>
+	
+	
+	
+
