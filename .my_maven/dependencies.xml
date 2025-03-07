@@ -5,6 +5,9 @@
 	    <artifactId>mariadb-java-client</artifactId>
 	    <version>3.4.1</version>
 	</dependency>
+	
+	
+	
 	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 	<!-- postgresql -->
   <dependency>
@@ -14,13 +17,15 @@
   </dependency>
 
 	
-	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+
 	<!-- Hibernate  -->
-	<dependency>
-	    <groupId>org.hibernate</groupId>
-	    <artifactId>hibernate-core</artifactId>
-	    <version>3.5.6-Final</version>
-	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+  <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>3.6.10.Final</version>
+  </dependency>
+
 
 	
 	<!-- https://mvnrepository.com/artifact/javassist/javassist -->
