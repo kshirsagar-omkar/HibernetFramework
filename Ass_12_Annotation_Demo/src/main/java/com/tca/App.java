@@ -9,10 +9,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.tca.entities.Student;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
 	

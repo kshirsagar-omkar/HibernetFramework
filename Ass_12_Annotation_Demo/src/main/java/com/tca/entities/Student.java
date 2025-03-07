@@ -18,6 +18,11 @@ public class Student {
 	@Column(name="PER")
 	private Double per;
 	
+	@Column(name="AGE", nullable=false)
+	private Integer Age;
+	
+	@Column(name="B")
+	private Integer B;
 	
 	public Integer getRno() {
 		return rno;
