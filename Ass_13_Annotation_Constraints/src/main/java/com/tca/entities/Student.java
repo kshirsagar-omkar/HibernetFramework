@@ -16,7 +16,9 @@ public class Student {
 	@Column(name="name", nullable=false)
 	private String name;
 	
-	@Column(name = "per")//, columnDefinition = "CHECK(per >= 0 AND per <= 100)")
+	
+	//Error cause because of this columnDefinition ... when the hbm2ddl = create
+	@Column(name = "per", columnDefinition = "CHECK(per >= 0 AND per <= 100)")
 	private Double per;
 	
 	@Column(name="email", length=50, unique=true)

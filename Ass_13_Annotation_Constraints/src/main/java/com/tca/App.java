@@ -26,12 +26,12 @@ public class App
         	session = sessionFactory.openSession();
         	transaction = session.beginTransaction();
         	
-        	
+        	//(STUDENT CLASS)Error cause because of this columnDefinition ... when the hbm2ddl = create 
         	Student student = new Student();
-        	student.setRno(333);
-        	student.setName("ccc");
-        	student.setPer(6.89);
-        	student.setEmail("cc@gmail.com");
+        	student.setRno(222);
+        	student.setName("bbb");
+        	student.setPer(611.89);
+        	student.setEmail("bb@gmail.com");
         	
         	session.save(student);
         	
