@@ -30,8 +30,9 @@ public class Student {
 	@Column(name="city")
 	private String city;
 	
-	@Column(name="created_at")
+	
 	@CreationTimestamp
+	@Column(name="created_at")
 	private LocalDateTime createdAt;
 
 	
