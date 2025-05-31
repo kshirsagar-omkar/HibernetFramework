@@ -49,7 +49,7 @@ public class StudentUtil {
     	
     	System.out.println("************************************************************");
     	
-    	sc.close();
+//    	sc.close();
     	
     	return student;
     }
@@ -84,7 +84,7 @@ public class StudentUtil {
         		System.out.println("Enter a Valid date!!\n");
         		if(chance == 3) {
         			System.out.println("Multiple try's therefore date is set to be null. You can change it latter~!!");
-        			sc.close();
+//        			sc.close();
         	    	return null;
         		}
         		++chance;

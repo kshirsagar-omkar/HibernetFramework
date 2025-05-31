@@ -12,9 +12,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="student_course")
+@Table(name="student_course",
+	   uniqueConstraints=@UniqueConstraint(columnNames= {"course_id", "student_id"} )
+)
 public class StudentCourse {
 
 	@Id
@@ -23,12 +26,12 @@ public class StudentCourse {
 	private Integer studentCourseId;
 	
 	
-	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinColumn(name="student_id")
 	private Student student;
 	
 	
-	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinColumn(name="course_id")
 	private Course course;
 	
